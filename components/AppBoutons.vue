@@ -2,7 +2,7 @@
   <div>
     <NuxtLink to="/contact" class="">
       <button
-        class="flex bg-dgl-primary hover:bg-dgl-hover  text-[16px] text-white font-inter py-[8px] px-[10px] rounded-full transition duration-300">
+        class="flex bg-dgl-primary hover:bg-dgl-hover text-[16px] text-white font-inter py-[8px] px-[10px] rounded-full focus:outline-none focus:ring-2 focus:bg-dgl-primary focus:border-transparent transition duration-300">
 
         <slot></slot>
 

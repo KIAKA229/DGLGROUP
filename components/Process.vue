@@ -5,7 +5,7 @@
             <img class="cursor-pointer" @click="scrollYear(-1)" :disabled="isFirstYear"
                 src="./../public/processPrevious.svg" alt="">
 
-            <div class="relative">
+            <div class="relative hidden sm:block">
                 <div class="flex items-center space-x-16">
                     <button v-for="year in visibleYears" :key="year" @click="selectYearAndScroll(year)" :class="[
                         'btn',
@@ -20,13 +20,29 @@
                 <div class="line"></div>
             </div>
 
+            <div class="relative block sm:hidden">
+                <div class="flex items-center space-x-16">
+                    <button v-for="year in visibleYears" :key="year" @click="selectYear(year)" :class="[
+                        'btn mx-8',
+                        {
+                            'active-btn': year === selectedYear,
+                        },
+                    ]">
+                        {{ year }}
+                    </button>
+                </div>
+                <div class="line"></div>
+            </div>
+
+
+
             <img class="cursor-pointer" @click="scrollYear(1)" :disabled="isLastYear" src="./../public/processNext.svg"
                 alt="">
         </div>
 
         <div>
             <div class="description mt-8 " v-if="years[0]">
-                <p class="mx-[200px] text-[20px] text-center">
+                <p class="md:mx-[200px] mx-auto text-[20px] text-center">
                     Notre mission est de simplifier la gestion de flotte et
                     de rendre le processus d'importation de véhicules
                     plus efficace pour nos clients. Nous croyons fermement
@@ -35,7 +51,7 @@
                 </p>
             </div>
             <div class="description mt-10 " v-else-if="years[1]">
-                <p class="mx-[200px] text-[20px] text-center">
+                <p class="md:mx-[200px] mx-auto text-[20px] text-center">
                     Notre mission est de simplifier la gestion de flotte et
                     de rendre le processus d'importation de véhicules
                     plus efficace pour nos clients. Nous croyons fermement
@@ -44,7 +60,7 @@
                 </p>
             </div>
             <div class="description mt-10 " v-else-if="years[2]">
-                <p class="mx-[200px] text-[20px] text-center">
+                <p class="md:mx-[200px] mx-auto text-[20px] text-center">
                     Notre mission est de simplifier la gestion de flotte et
                     de rendre le processus d'importation de véhicules
                     plus efficace pour nos clients. Nous croyons fermement
@@ -62,7 +78,7 @@
                 </p>
             </div>
             <div class="description mt-10 " v-else-if="years[4]">
-                <p class="mx-[200px] text-[20px] text-center">
+                <p class="md:mx-[200px] mx-auto text-[20px] text-center">
                     Notre mission est de simplifier la gestion de flotte et
                     de rendre le processus d'importation de véhicules
                     plus efficace pour nos clients. Nous croyons fermement
@@ -71,7 +87,7 @@
                 </p>
             </div>
             <div class="description mt-10 " v-else-if="years[5]">
-                <p class="mx-[200px] text-[20px] text-center">
+                <p class="md:mx-[200px] mx-auto text-[20px] text-center">
                     Notre mission est de simplifier la gestion de flotte et
                     de rendre le processus d'importation de véhicules
                     plus efficace pour nos clients. Nous croyons fermement
@@ -80,7 +96,7 @@
                 </p>
             </div>
             <div class="description mt-10 " v-else>
-                <p class="mx-[200px] text-[20px] text-center">
+                <p class="md:mx-[200px] mx-auto text-[20px] text-center">
                     Notre mission est de simplifier la gestion de flotte et
                     de rendre le processus d'importation de véhicules
                     plus efficace pour nos clients. Nous croyons fermement
@@ -99,6 +115,7 @@ export default {
         return {
             years: [2018, 2019, 2020, 2021, 2022, 2023, 2024],
             selectedYear: 2023,
+            visibleMobileYears: [2022, 2023],
             visibleYears: [2022, 2023, 2024], // Années visibles
         };
     },
@@ -109,6 +126,11 @@ export default {
         isLastYear() {
             return this.selectedYear === this.years[this.years.length - 1];
         },
+        visibleYears() {
+                  const index = this.years.indexOf(this.selectedYear);
+                  if (index === -1) return [];
+                  return this.years.slice(Math.max(0, index - 1), Math.min(index + 2, this.years.length));
+            },
     },
     methods: {
         selectYearAndScroll(year) {
@@ -125,6 +147,17 @@ export default {
                 this.selectedYear = this.years[newIndex];
                 // Mettez à jour les années visibles
                 this.visibleYears = this.years.slice(Math.max(0, newIndex - 1), Math.min(this.years.length, newIndex + 2));
+            }
+        },
+
+        selectYear(year) {
+            this.selectedYear = year;
+        },
+        scrollYear(direction) {
+            const currentIndex = this.years.indexOf(this.selectedYear);
+            const newIndex = currentIndex + direction;
+            if (newIndex >= 0 && newIndex < this.years.length) {
+                this.selectedYear = this.years[newIndex];
             }
         },
     },

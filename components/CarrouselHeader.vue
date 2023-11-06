@@ -1,14 +1,15 @@
 <template>
     <div class="relative w-full" data-carousel="slide">
-        <div class="relative h-[650px] overflow-hidden md:h-[600px]">
+        <div class="relative h-[550px]  overflow-hidden md:h-[600px]">
             <!-- Div contenant le texte fixe sur le dessus avec un z-index supérieur -->
-            <div class="absolute text-white top-1/4 ml-28  z-30">
-                <h2 class="text-[38px] font-bold">DGL, votre partenaire en import-export</h2>
-                <h3 class="text-[14px] pt-[22px]">Par <span class="text-dgl-primary">E-GBAVOU</span> | 04/09/2023 </h3>
-                <p class="mt-4 text-[20px] mr-[550px]">DGL est un pionnier dans la création et la livraison de solutions
+            <div class="absolute text-white top-[140px] md:top-1/4 mx-10 md:ml-28 z-30">
+                <h2 class="md:text-[40px] text-[35px] font-bold">DGL, votre partenaire en import-export</h2>
+                <h3 class="text-[16px] pt-[25px]">Par <span class="text-dgl-primary">E-GBAVOU</span> | 04/09/2023 </h3>
+                <p class="mt-4 text-[18px] md:text-[22px] md:mr-[550px] ">DGL est un pionnier dans la création et la
+                    livraison de solutions
                     révolutionnaires
                     dans les secteurs de la gestion de flotte. dans les secteurs de la gestion de flotte</p>
-                <AppBoutons class="mt-6">
+                <AppBoutons class="mt-6 text-[22px]">
                     Contactez-nous
                 </AppBoutons>
             </div>
@@ -17,26 +18,47 @@
                 <!-- Slide 1 -->
                 <div class="hidden duration-1000 ease-in-out" :class="{ 'block': currentSlide === 0 }" data-carousel-item>
                     <img src="./../public/slideHeroHeader0.svg"
-                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 hidden sm:block"
+                        alt="...">
+                    <img src="./../public/heroheader.svg"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 block sm:hidden"
+                        alt="...">
+
                 </div>
                 <!-- Slide 2 -->
                 <div class="hidden duration-1000 ease-in-out" :class="{ 'block': currentSlide === 1 }" data-carousel-item>
-                    <img src="./../public/slideHeroHeader2.svg"
-                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    <img src="./../public/slideHeroHeader1.svg"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 hidden sm:block"
+                        alt="...">
+                    <img src="./../public/heroheader.svg"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 block sm:hidden"
+                        alt="...">
 
                 </div>
                 <!-- Slide 3 -->
                 <div class="hidden duration-1000 ease-in-out" :class="{ 'block': currentSlide === 2 }" data-carousel-item>
                     <img src="./../public/slideHeroHeader3.svg"
-                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 hidden sm:block"
+                        alt="...">
+                    <img src="./../public/heroheader.svg"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 block sm:hidden"
+                        alt="...">
                 </div>
                 <div class="hidden duration-1000 ease-in-out" :class="{ 'block': currentSlide === 3 }" data-carousel-item>
                     <img src="./../public/slideHeroHeader1.svg"
-                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 hidden sm:block"
+                        alt="...">
+                    <img src="./../public/heroheader.svg"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 block sm:hidden"
+                        alt="...">
                 </div>
                 <div class="hidden duration-1000 ease-in-out" :class="{ 'block': currentSlide === 4 }" data-carousel-item>
-                    <img src="./../public/slideHeroHeader3.svg"
-                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    <img src="./../public/slideHeroHeader2.svg"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 hidden sm:block"
+                        alt="...">
+                    <img src="./../public/heroheader.svg"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 block sm:hidden"
+                        alt="...">
                 </div>
             </div>
         </div>

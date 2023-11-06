@@ -1,13 +1,12 @@
 <template>
-    <div>
-        <AppHeader />
-        <CarrouselHeader />
-        <NosServicesDeMobilite/>
-        <PartenaireHome />
-        <Temoignage />
-        <PartenaireAccueil />
-        <BestProduit />
-        <NewsLetter />
-        <AppFooter />
-    </div>
+    <AppHeader />
+    <CarrouselHeader />
+    <NosServicesDeMobilite />
+    <NosValeursAccueil />
+
+    <Temoignage />
+    <PartenaireAccueil />
+    <BestProduit />
+    <NewsLetter />
+    <AppFooter />
 </template> 

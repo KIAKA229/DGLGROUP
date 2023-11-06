@@ -1,61 +1,71 @@
 <template>
-    <div class="flex items-center gap-4 mx-20 my-16">
-        <div class="px-10">
-            <img src="./../public/serviceSvg1.svg" alt="" class="h-[350px] w-[630px]">
+    <div class="flex flex-col md:flex-row items-center mx-4 md:mx-20 my-10 md:my-16">
+        <div class="md:w-1/2">
+            <img src="./../public/serviceSvg1.svg" alt="" class="w-full md:max-w-[630px]" />
         </div>
-        <div class="mr-10 p-8">
-            <div class="flex items-center py-4">
-                <div class="pr-[24px] ">
-                    <img src="./../public/iconListServices.svg" alt="" class="h-7 w-7">
-                </div>
-                <div>
-                    <h3 class="font-dm text-[24px]">
-                        Traçage et Suivi de véhicule
-                    </h3>
-                </div>
-            </div>
-            <div class="flex items-center py-4">
-                <div class="pr-[24px] ">
-                    <img src="./../public/iconListServices.svg" alt="" class="h-7 w-7">
-                </div>
-                <div>
-                    <h3 class="font-dm text-[24px]">
-                        Vente de véhicules 
-                    </h3>
+        <div class="md:w-1/2 mt-6 pl-28 md:mt-0 p-4 hidden sm:block">
+            <!-- Content blocks -->
+            <div class="py-2 md:py-4 ">
+                <div class="flex items-center">
+                    <div class="pr-4 md:pr-8">
+                        <img src="./../public/iconListServices.svg" alt="" class="h-7 w-7" />
+                    </div>
+                    <div>
+                        <h3 class="font-dm text-lg md:text-2xl">
+                            Traçage et Suivi de véhicule
+                        </h3>
+                    </div>
                 </div>
             </div>
-            <div class="flex items-center py-4">
-                <div class="pr-[24px] ">
-                    <img src="./../public/iconListServices.svg" alt="" class="h-7 w-7">
-                </div>
-                <div>
-                    <h3 class="font-dm text-[24px]">
-                        Suivi et Gestion de flotte
-                    </h3>
-                </div>
-            </div>
-            <div class="flex items-center py-4">
-                <div class="pr-[24px]">
-                    <img src="./../public/iconListServices.svg" alt="" class="h-7 w-7">
-                </div>
-                <div>
-                    <h3 class="font-dm text-[24px]">
-                        VTC
-                    </h3>
+            <div class="py-2 md:py-4">
+                <div class="flex items-center">
+                    <div class="pr-4 md:pr-8">
+                        <img src="./../public/iconListServices.svg" alt="" class="h-7 w-7" />
+                    </div>
+                    <div>
+                        <h3 class="font-dm text-lg md:text-2xl">
+                            Vente de véhicules
+                        </h3>
+                    </div>
                 </div>
             </div>
-            <div class="flex items-center py-4">
-                <div class="pr-[24px]">
-                    <img src="./../public/iconListServices.svg" alt="" class="h-7 w-7">
+            <div class="py-2 md:py-4">
+                <div class="flex items-center">
+                    <div class="pr-4 md:pr-8">
+                        <img src="./../public/iconListServices.svg" alt="" class="h-7 w-7" />
+                    </div>
+                    <div>
+                        <h3 class="font-dm text-lg md:text-2xl">
+                            Suivi et Gestion de flotte
+                        </h3>
+                    </div>
                 </div>
-                <div>
-                    <h3 class="font-dm text-[24px]">
-                        Livraison sécurisé et fiable
-                    </h3>
+            </div>
+            <div class="py-2 md:py-4">
+                <div class="flex items-center">
+                    <div class="pr-4 md:pr-8">
+                        <img src="./../public/iconListServices.svg" alt="" class="h-7 w-7" />
+                    </div>
+                    <div>
+                        <h3 class="font-dm text-lg md:text-2xl">
+                            VTC
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="py-2 md:py-4">
+                <div class="flex items-center">
+                    <div class="pr-4 md:pr-8">
+                        <img src="./../public/iconListServices.svg" alt="" class="h-7 w-7" />
+                    </div>
+                    <div>
+                        <h3 class="font-dm text-lg md:text-2xl">
+                            Livraison sécurisée et fiable
+                        </h3>
+                    </div>
                 </div>
             </div>
         </div>
-
     </div>
 </template>
 
@@ -63,4 +73,6 @@
 
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+/* Add any additional CSS styles here, if needed. */
+</style>

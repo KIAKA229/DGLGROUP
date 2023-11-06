@@ -2,7 +2,7 @@
     <div>
         <div id="default-carousel" class="relative w-full" data-carousel="slide">
             <!-- Carousel wrapper -->
-            <div class="relative h-[650px] overflow-hidden md:h-[600px]">
+            <div class="relative h-[200px] overflow-hidden md:h-[600px]">
                 <!-- Item 1 -->
                 <div class="hidden duration-1000 ease-in-out" data-carousel-item>
                     <img src="./../public/carrouselProduit1.svg"
