@@ -3,15 +3,15 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'DM Sans';
-    src: url('/DGL/fonts/DMSans-Regular.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'DM Sans';
-    src: url('/./DGL/fonts/DMSans-Bold.ttf') format('ttf');
-    font-weight: bold;
-    font-style: normal;
-  }
+  font-family: 'DM Sans';
+  src: url('/DGL/fonts/DMSans-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/./DGL/fonts/DMSans-Bold.ttf') format('ttf');
+  font-weight: bold;
+  font-style: normal;
+}

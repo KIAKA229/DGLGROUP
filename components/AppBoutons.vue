@@ -1,13 +1,13 @@
 <template>
-    <div>
-        <!-- Bouton Call to Action (CTA) -->
-     
+  <div>
+    <NuxtLink to="/contact" class="">
+      <button
+        class="flex bg-dgl-primary hover:bg-dgl-hover  text-[16px] text-white font-inter py-[8px] px-[10px] rounded-full transition duration-300">
 
-      <button class="flex bg-dgl-primary hover:bg-dgl-hover  text-[16px] text-white font-inter py-[10px] px-[15px] rounded-full transition duration-300">
-        <a href="#" class="pr-[20px]">
-        Contactez-nous        
-      </a>
-      <img src="./../public/octicon_arrow-right-16.svg" alt="" class="">
+        <slot></slot>
+
+        <img src="./../public/octicon_arrow-right-16.svg" alt="" class="pl-2">
       </button>
-    </div>
+    </NuxtLink>
+  </div>
 </template>

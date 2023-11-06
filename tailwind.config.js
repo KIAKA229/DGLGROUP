@@ -7,12 +7,14 @@ module.exports = {
     "./plugins/**/*.{js,ts}",
     "./app.vue",
     "./error.vue",
+    "./node_modules/flowbite/**/*.js"
   ],
   theme: {
     extend: {
+
       colors: {
         'dgl-primary': '#3A73B7',
-        'dgl-hover': '#2171CF'        
+        'dgl-hover': '#2171CF'
       },
 
       fontFamily: {
@@ -71,5 +73,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+  ],
 }

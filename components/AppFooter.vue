@@ -1,15 +1,13 @@
 <template>
     <div>
-
-        <!-- component -->
-        <div class="flex items-end w-full min-h-screen bg-white">
+        <div class="flex items-end w-full  bg-white">
 
             <footer class="w-full text--[#555151] bg-[#F5FEFD] body-font">
                 <div
                     class="container flex flex-col flex-wrap px-5 py-12 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
                     <div class="flex-shrink-0 w-56 mx-auto text-center md:mx-0 md:text-left">
                         <a class="flex items-center justify-center md:justify-start cursor-pointer">
-                            <img src="./../public/LOGO DGLGROUP-02.svg" >
+                            <img src="./../public/LOGO DGLGROUP-02.svg">
                         </a>
                     </div>
                     <div class="flex flex-wrap flex-grow mt-10 -mb-10 text-center md:pl-20 md:mt-0 md:text-left">
@@ -22,11 +20,11 @@
                                     <a
                                         class="text-[#555151] text-dm text-[20px] cursor-pointer hover:text-dgl-primary">Import</a>
                                 </li>
-                                <li class="mt-3">
+                                <li class="mt-2">
                                     <a
                                         class="text-[#555151] text-dm text-[20px] cursor-pointer hover:text-dgl-primary">Export</a>
                                 </li>
-                                <li class="mt-3">
+                                <li class="mt-2">
                                     <a
                                         class="text-[#555151] text-dm text-[20px] cursor-pointer hover:text-dgl-primary">Transport</a>
                                 </li>
@@ -41,15 +39,15 @@
                                     <a
                                         class="text-[#555151] text-dm text-[20px] cursor-pointer hover:text-dgl-primary">Accueil</a>
                                 </li>
-                                <li class="mt-3">
+                                <li class="mt-2">
                                     <a class="text-[#555151] text-dm text-[20px] cursor-pointer hover:text-dgl-primary">A
                                         propos</a>
                                 </li>
-                                <li class="mt-3">
+                                <li class="mt-2">
                                     <a
                                         class="text-[#555151] text-dm text-[20px] cursor-pointer hover:text-dgl-primary">Produits</a>
                                 </li>
-                                <li class="mt-3">
+                                <li class="mt-2">
                                     <a
                                         class="text-[#555151] text-dm text-[20px] cursor-pointer hover:text-dgl-primary">Blog</a>
                                 </li>
@@ -64,7 +62,7 @@
                                     class=" h-[42px] p-4 mb-4 w-[280px] rounded-[33px] border-[1px]  border-blue-200 focus:border-blue-300">
 
                                 <button
-                                    class="flex bg-dgl-primary hover:bg-dgl-hover text-[16px] text-white font-inter py-[10px] px-[15px] rounded-full transition duration-300">
+                                    class="flex bg-dgl-primary hover:bg-dgl-hover text-[16px] text-white font-inter py-[10px] px-[15px] rounded-full focus:outline-none focus:ring-2 focus:bg-dgl-primary focus:border-transparent transition duration-300 ">
                                     <a href="#" class="pr-[20px]">
                                         S'inscrire
                                     </a>
@@ -86,27 +84,27 @@
                             </NuxtLink>
                         </div>
 
-                        
-                       <div class="flex items-center space-x-6">
-                        <div class="flex items-center space-x-2">                          
-                            <div>
-                                <img src="./../public/call.svg" >
+
+                        <div class="flex items-center space-x-6">
+                            <div class="flex items-center space-x-2">
+                                <div>
+                                    <img src="./../public/call.svg">
+                                </div>
+                                <div class="text-white">+229 96 24 97 17</div>
                             </div>
-                            <div class="text-white">+229 96 24 97 17</div>
-                        </div>
-                        <div class="flex items-center space-x-2">                          
-                            <div>
-                                <img src="./../public/email.svg" >
+                            <div class="flex items-center space-x-2">
+                                <div>
+                                    <img src="./../public/email.svg">
+                                </div>
+                                <div class="text-white">dgl@gmail.com</div>
                             </div>
-                            <div class="text-white">dgl@gmail.com</div>
-                        </div>
-                        <div class="flex items-center space-x-2">                          
-                            <div>
-                                <img src="./../public/location_on.svg" >
+                            <div class="flex items-center space-x-2">
+                                <div>
+                                    <img src="./../public/location_on.svg">
+                                </div>
+                                <div class="text-white">Bénin Agla Hlazounto C/3194 </div>
                             </div>
-                            <div class="text-white">Bénin Agla Hlazounto C/3194 </div>
                         </div>
-                       </div>
                     </div>
                 </div>
             </footer>

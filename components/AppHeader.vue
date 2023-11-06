@@ -10,19 +10,31 @@
                 <!-- Navigation -->
                 <nav class="md:flex hidden sm:items-center">
                     <div class="space-x-8 mr-16">
-                        <a href="#"
-                            class="text-dgl-primary font-dm text-[18px] hover:text-dgl-primary transition duration-300">Accueil</a>
-                        <a href="#"
-                            class="text-black text-[18px]  font-dm hover:text-dgl-primary transition duration-300">A
-                            propos</a>
-                        <a href="#"
-                            class="text-black text-[18px]  font-dm hover:text-dgl-primary transition duration-300">Services</a>
-                        <a href="#"
-                            class="text-black text-[18px] font-dm hover:text-dgl-primary transition duration-300">Blog</a>
-                        <a href="#"
-                            class="text-black text-[18px] font-dm hover:text-dgl-primary transition duration-300">Produits</a>
+
+                        <NuxtLink to="/"
+                            class=" font-montserrat text-[18px] hover:text-dgl-primary ease-in-out transition-all duration-700"
+                            :class="{ 'text-dgl-primary': $route.path === '/' }">
+                            Accueil</NuxtLink>
+                        <NuxtLink to="/about"
+                            class="text-black text-[18px]  font-dm hover:text-dgl-primary ease-in-out transition-all duration-700"
+                            :class="{ 'text-dgl-primary': $route.path === '/about' }">A propos
+                        </NuxtLink>
+                        <NuxtLink to="/services"
+                            class="text-black text-[18px]  font-dm hover:text-dgl-primary transition duration-300"
+                            :class="{ 'text-dgl-primary': $route.path === '/services' }">Services
+                        </NuxtLink>
+                        <NuxtLink to="/blog"
+                            class="text-black text-[18px]  font-dm hover:text-dgl-primary transition duration-300"
+                            :class="{ 'text-dgl-primary': $route.path === '/blog' }">Blog
+                        </NuxtLink>
+                        <NuxtLink to="/produit"
+                            class="text-black text-[18px]  font-dm hover:text-dgl-primary transition duration-300"
+                            :class="{ 'text-dgl-primary': $route.path === '/produit' }">Produits
+                        </NuxtLink>
                     </div>
-                    <AppBoutons />
+                    <AppBoutons class="mt-1">
+                        Contactez-vous
+                    </AppBoutons>
                 </nav>
             </div>
 
@@ -36,7 +48,6 @@
         </div>
     </header>
 </template>
-  
 
 <script setup>
 
